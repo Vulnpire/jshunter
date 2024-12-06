@@ -59,9 +59,14 @@ go install -v github.com/Vulnpire/jshunter@latest
 
 Or download a [binary release](https://github.com/cc1a2b/jshunter/releases) for your platform.
 
+## Axiom Support
 
-
-
+```
+[{
+        "command":"jshunter -l input -q -t 10 -nc | anew output",
+        "ext":"txt"
+}]
+```
 
 
 ## License
