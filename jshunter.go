@@ -121,6 +121,33 @@ var (
 	"slack_client_secret":           regexp.MustCompile(`xoxs-[0-9]{1,9}.[0-9A-Za-z]{1,12}.[0-9A-Za-z]{24,64}`),
         "phone_number":                  regexp.MustCompile(`^\+\d{9,14}$`),
         "email":                         regexp.MustCompile(`[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}`),
+	"jwt_token":                     regexp.MustCompile(`eJ[A-Za-z0-9-_=]+\.[A-Za-z0-9-_=]+\.?[A-Za-z0-9-_.+/=]*$`),
+	"azure_client_id":               regexp.MustCompile(`[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}`),
+	"azure_client_secret":           regexp.MustCompile(`[a-zA-Z0-9._~+-/]{32,}`),
+	"azure_tenant_id":               regexp.MustCompile(`[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}`),
+	"aws_session_token":             regexp.MustCompile(`(?i)AKIA[0-9A-Z]{16}:[a-zA-Z0-9/+=]{40,}`),
+	"bitbucket_client_secret":       regexp.MustCompile(`(?i)(?<![a-zA-Z0-9])[a-zA-Z0-9]{32}_[a-zA-Z0-9]{32}(?![a-zA-Z0-9])`),
+	"asana_personal_access_token":   regexp.MustCompile(`0/[\w-]{40,50}`),
+	"databricks_api_token":          regexp.MustCompile(`(?i)dapi[a-zA-Z0-9]{32,}`),
+	"fastly_api_key":                regexp.MustCompile(`(?i)fastly_[a-zA-Z0-9_-]{32,}`),
+	"hasura_admin_secret":           regexp.MustCompile(`(?i)(admin|hasura)_secret=['"]?[a-zA-Z0-9_-]{32,}`),
+	"linode_api_key":                regexp.MustCompile(`[a-zA-Z0-9]{64}`),
+	"openai_api_key":                regexp.MustCompile(`sk-[a-zA-Z0-9]{32}`),
+	"postman_api_key":               regexp.MustCompile(`PMAK-[a-zA-Z0-9]{24}-[a-zA-Z0-9]{32}`),
+	"plaid_access_token":            regexp.MustCompile(`access_token\.[A-Za-z0-9_-]{24,}`),
+	"sendinblue_api_key":            regexp.MustCompile(`xkeysib-[a-f0-9]{32}-[a-f0-9]{24}`),
+	"twilio_auth_token":             regexp.MustCompile(`(?i)TWILIO_AUTH_TOKEN=['"]?[a-f0-9]{32}`),
+	"zendesk_api_token":             regexp.MustCompile(`(?i)zd_[a-zA-Z0-9]{32}`),
+	"twitch_access_token":           regexp.MustCompile(`(?i)Bearer [a-zA-Z0-9]{30,}`),
+	"twitch_client_id":              regexp.MustCompile(`[a-z0-9]{30}`),
+	"paypal_api_key":                regexp.MustCompile(`(?i)PAYPAL_API_KEY=['"]?[A-Za-z0-9]{20,50}`),
+	"elastic_cloud_api_key":         regexp.MustCompile(`[a-zA-Z0-9]{32}-[a-zA-Z0-9]{32}`),
+	"vault_auth_token":              regexp.MustCompile(`[a-zA-Z0-9_-]{20,50}`),
+	"pendo_api_key":                 regexp.MustCompile(`pendo-[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}`),
+	"firebase_database_url":         regexp.MustCompile(`https://[a-zA-Z0-9_-]+\.firebaseio\.com`),
+	"personal_email_pattern":        regexp.MustCompile(`(?i)^[a-zA-Z0-9._%+-]+@(gmail|yahoo|outlook|icloud|hotmail)\.[a-z]{2,}$`),
+
+	
     }
 
     asciiArt = `
