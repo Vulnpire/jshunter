@@ -54,7 +54,7 @@ This command will analyze the specified JavaScript file and output the results t
 You can either install using go:
 
 ```
-go install -v github.com/cc1a2b/jshunter@latest
+go install -v github.com/Vulnpire/jshunter@latest
 ```
 
 Or download a [binary release](https://github.com/cc1a2b/jshunter/releases) for your platform.
