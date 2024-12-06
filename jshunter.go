@@ -125,7 +125,7 @@ var (
 	"azure_client_secret":           regexp.MustCompile(`[a-zA-Z0-9._~+-/]{32,}`),
 	"azure_tenant_id":               regexp.MustCompile(`[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}`),
 	"aws_session_token":             regexp.MustCompile(`(?i)AKIA[0-9A-Z]{16}:[a-zA-Z0-9/+=]{40,}`),
-	"bitbucket_client_secret":       regexp.MustCompile(`(?i)(?<![a-zA-Z0-9])[a-zA-Z0-9]{32}_[a-zA-Z0-9]{32}(?![a-zA-Z0-9])`),
+        "bitbucket_client_secret":       regexp.MustCompile(`(?i)\b[a-zA-Z0-9]{32}_[a-zA-Z0-9]{32}\b`),
 	"asana_personal_access_token":   regexp.MustCompile(`0/[\w-]{40,50}`),
 	"databricks_api_token":          regexp.MustCompile(`(?i)dapi[a-zA-Z0-9]{32,}`),
 	"fastly_api_key":                regexp.MustCompile(`(?i)fastly_[a-zA-Z0-9_-]{32,}`),
